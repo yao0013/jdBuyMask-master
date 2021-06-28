@@ -1,0 +1,7 @@
+2021-06-28 16:35:50,375 INFO: 你的area是[ 19_1607_4773_0 ]，链接的商品id是[ 100003406321 ]
+2021-06-28 16:43:34,320 INFO: V2版本当前模式[极速模式]
+2021-06-28 16:43:34,668 INFO: 校验是否登录[失败]
+2021-06-28 16:43:34,670 INFO: 请在configDemo.ini文件下更新cookie
+2021-06-28 16:43:39,729 INFO: 校验是否登录[失败]
+2021-06-28 16:43:39,729 INFO: 请在configDemo.ini文件下更新cookie
+2021-06-28 16:43:46,076 ERROR: Request error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
