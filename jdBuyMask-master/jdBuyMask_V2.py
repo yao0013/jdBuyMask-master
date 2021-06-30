@@ -481,7 +481,7 @@ def normalMode():
             if int(time.time()) - configTime >= 600:
                 nowMd5 = getconfigMd5()
                 if not nowMd5 == configMd5:
-                    logger.info('配置文件修改，重新读取文件')
+                    logger.info('配置文件修改，重新读取--文件')
                     getconfig()
             # modelType
             logger.info('第' + str(flag) + '次 ')
