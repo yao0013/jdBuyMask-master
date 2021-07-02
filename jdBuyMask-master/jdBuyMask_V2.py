@@ -440,7 +440,7 @@ def normalModeAutoBuy(inStockSkuid):
         if item_removed(skuId):
             global submit_Time
             submit_Time = int(time.time() * 1000)
-            logger.info('[%s]类型口罩有货啦!马上下单', skuId)
+            logger.info('[%s]有货啦!马上下单', skuId)
             skuidUrl = 'https://item.jd.com/' + skuId + '.html'
             if normalModeBuyMask(skuId):
                 message.send(skuidUrl, True)
@@ -448,14 +448,14 @@ def normalModeAutoBuy(inStockSkuid):
             else:
                 message.send(skuidUrl, False)
         else:
-            logger.info('[%s]类型口罩有货，但已下柜商品', skuId)
+            logger.info('[%s]有货，但已下柜商品', skuId)
 
 
 def fastModeAutoBuy(inStockSkuid):
     for skuId in inStockSkuid:
         global submit_Time
         submit_Time = int(time.time() * 1000)
-        logger.info('[%s]类型口罩有货啦!马上下单', skuId)
+        logger.info('[%s]有货啦!马上下单', skuId)
         skuidUrl = 'https://item.jd.com/' + skuId + '.html'
         if fastModeBuyMask(skuId):
             message.send(skuidUrl, True)
@@ -481,7 +481,7 @@ def normalMode():
             if int(time.time()) - configTime >= 600:
                 nowMd5 = getconfigMd5()
                 if not nowMd5 == configMd5:
-                    logger.info('配置文件修改，重新读取文件')
+                    logger.info('配置文件修改，重新读取--文件')
                     getconfig()
             # modelType
             logger.info('第' + str(flag) + '次 ')
